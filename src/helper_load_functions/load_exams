@@ -1,3 +1,6 @@
+import os
+
+
 # Load exams into a dictionary
 def load_exams():
 

@@ -1,3 +1,7 @@
+import os
+import statistics
+
+
 def export_course_report():
     students = load_students()
     courses = load_courses()

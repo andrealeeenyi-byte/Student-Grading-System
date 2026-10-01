@@ -1,3 +1,6 @@
+import statistics
+
+
 def display_individual_performance():
     print("\n=== Individual Student Performance ===")
     students = load_students()

@@ -1,3 +1,6 @@
+import os
+
+
 def initialize_files():
     # Ensure required text files exist
     for filename in [STUDENTS_FILE, COURSES_FILE, GRADES_FILE, EXAMS_FILE]:

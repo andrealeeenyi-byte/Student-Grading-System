@@ -1,3 +1,6 @@
+import statistics
+
+
 def display_course_summary():
     print("\n=== Course Performance Summary ===")
     students = load_students()

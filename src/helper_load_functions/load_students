@@ -1,3 +1,6 @@
+import os
+
+
 # Load students into a dictionary
 def load_students():
 
