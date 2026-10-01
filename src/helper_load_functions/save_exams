@@ -1,0 +1,5 @@
+def save_exams(exams):
+    with open(EXAMS_FILE, "w") as f:
+        for cid, exam_list in exams.items():
+            for exam in exam_list:
+                f.write(f"{cid},{exam['test_name']},{exam['marks_ratio']}\n")

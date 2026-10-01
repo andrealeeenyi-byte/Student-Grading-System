@@ -1,0 +1,24 @@
+# Load exams into a dictionary
+def load_exams():
+
+  exams = {}
+  if not os.path.exists(EXAMS_FILE):
+      return exams
+
+  with open(EXAMS_FILE, "r") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            parts = [p.strip() for p in line.split(",")]
+            if len(parts) < 3:
+                continue
+            cid, test_name, marks_ratio = parts
+            if cid not in exams:
+              exams[cid] = []
+            exams[cid].append({
+                "test_name": test_name,
+                "marks_ratio": float(marks_ratio)
+            })
+
+  return exams
